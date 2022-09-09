@@ -93,13 +93,18 @@ const HomeScreen = () => {
                 <View>
                     <View style={{flexDirection: 'row'}}>
                         <Text style={{fontSize: 28}}>Hello,</Text>
-                        <Text style={{fontSize: 28, fontWeight: 'bold', marginLeft: 10}}>Stephane</Text>
+                        <Text style={{fontSize: 28, fontWeight: 'bold', marginLeft: 10}}>Stephane </Text>
                     </View>
                     <Text style={{marginTop: 10, fontSize: 22, color: COLORS.grey}}>
                         What do you want today
                     </Text>
+                    <Text style={{marginTop: 10, fontSize: 22}}>
+                        {auth.currentUser?.email}
+                    </Text>
                 </View>
-                <Image source={require('../assets/person.png')} style={{height: 50, width: 50, borderRadius: 25}} />
+                <TouchableOpacity onPress={handleSignOut}>
+                    <Image source={require('../assets/person.png')} style={{height: 50, width: 50, borderRadius: 25}} />
+                </TouchableOpacity>
             </View>
             <View
                 style={{
@@ -136,18 +141,18 @@ const HomeScreen = () => {
     )
 
 
+//     return (
 
-
-    {/* <View style={styles.container}>
-      <Text>Email: {auth.currentUser?.email} </Text>
-      <TouchableOpacity
-        onPress={handleSignOut}
-        style={styles.button}
-      >
-        <Text style={styles.buttonText}>Sign out</Text>
-      </TouchableOpacity>
-    </View> */}
-  
+//     <View style={styles.container}>
+//       <Text>Email: {auth.currentUser?.email} </Text>
+//       <TouchableOpacity
+//         onPress={handleSignOut}
+//         style={styles.button}
+//       >
+//         <Text style={styles.buttonText}>Sign out</Text>
+//       </TouchableOpacity>
+//     </View> 
+//   )
 }
 
 export default HomeScreen
