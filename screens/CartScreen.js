@@ -22,7 +22,7 @@ const CartScreen = ({navigation}) => {
                     flex: 1}}>
                     <Text style={{fontSize: 16, fontWeight: 'bold'}}>{item.name}</Text>
                     <Text style={{fontSize: 13, color: COLORS.grey, marginTop: 10}}>{item.ingredients}</Text>
-                    <Text style={{fontSize: 17, color: COLORS.grey, fontWeight: 'bold', marginTop: 5}}>€ {item.price}</Text>
+                    <Text style={{fontSize: 17, fontWeight: 'bold'}}>€ {item.price}</Text>
 
                 </View>
                 <View style={{marginRight: 20, alignItems: 'center'}}>

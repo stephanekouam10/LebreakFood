@@ -66,7 +66,7 @@ const HomeScreen = () => {
             onPress={()=>navigation.navigate('DetailsScreen', food)}>
                 <View style={styles.Card}>
                     <View style={{alignItems: 'center',  top: -40}}>
-                        <Image source={food.image} style={{height: 120, width: 120}}/>
+                        <Image source={food.image} style={{height: 120, width: 120, borderRadius: 30}}/>
                     </View>
                     <View style={{marginHorizontal: 20}}>
                         <Text style={{fontSize: 18, fontWeight: 'bold'}}>{food.name}</Text>
