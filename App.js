@@ -20,7 +20,9 @@ export default function App() {
       <StatusBar backgroundColor={COLORS.white} barStyle="dark-content" />
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="BoardScreen" component={OnBoardScreen} />
+        <Stack.Screen options={{ headerShown: false }} name="Login" component={LoginScreen} />
         <Stack.Screen name="Home" component={BottomNavigator} />
+        <Stack.Screen options={{ headerShown: false }} name="Register" component={RegisterScreen} />
         <Stack.Screen name="DetailsScreen" component={DetailsScreen} />
 
         {/* <Stack.Screen options={{ headerShown: false }} name="Login" component={LoginScreen} />
