@@ -24,6 +24,7 @@ const BottomNavigator = () => {
         name="HomeScreen"
         component={HomeScreen}
         options={{
+          headerShown: false,
           tabBarIcon: ({color}) => (
             <Icon name="home-filled" color={color} size={28} />
           ),
@@ -33,6 +34,7 @@ const BottomNavigator = () => {
         name="LocalMall"
         component={HomeScreen}
         options={{
+          headerShown: false,
           tabBarIcon: ({color}) => (
             <Icon name="local-mall" color={color} size={28} />
           ),
@@ -42,6 +44,7 @@ const BottomNavigator = () => {
         name="Search"
         component={HomeScreen}
         options={{
+          headerShown: false,
           tabBarIcon: ({color}) => (
             <View
               style={{
@@ -65,6 +68,7 @@ const BottomNavigator = () => {
         name="Favorite"
         component={HomeScreen}
         options={{
+          headerShown: false,
           tabBarIcon: ({color}) => (
             <Icon name="favorite" color={color} size={28} />
           ),
@@ -74,6 +78,7 @@ const BottomNavigator = () => {
         name="Cart"
         component={CartScreen}
         options={{
+          headerShown: false,
           tabBarIcon: ({color}) => (
             <Icon name="shopping-cart" color={color} size={28} />
           ),
